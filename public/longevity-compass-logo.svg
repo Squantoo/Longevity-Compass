@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="bg" cx="42%" cy="36%" r="72%">
+      <stop offset="0%" stop-color="#12383A"/>
+      <stop offset="70%" stop-color="#0E2C2C"/>
+      <stop offset="100%" stop-color="#061617"/>
+    </radialGradient>
+    <linearGradient id="needleN" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EBC078"/>
+      <stop offset="100%" stop-color="#D6A055"/>
+    </linearGradient>
+    <linearGradient id="needleS" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8FB49A"/>
+      <stop offset="100%" stop-color="#5E7D68"/>
+    </linearGradient>
+  </defs>
+
+  <!-- badge -->
+  <circle cx="200" cy="200" r="190" fill="url(#bg)"/>
+  <circle cx="200" cy="200" r="190" fill="none" stroke="#D6A055" stroke-width="6"/>
+  <circle cx="200" cy="200" r="172" fill="none" stroke="#8FB49A" stroke-width="1.6" opacity="0.5"/>
+
+  <!-- ticks -->
+  <line x1="200.0" y1="24.0" x2="200.0" y2="42.0" stroke="#D6A055" stroke-width="4" stroke-linecap="round" opacity="1"/>
+    <line x1="290.0" y1="44.1" x2="284.0" y2="54.5" stroke="#8FB49A" stroke-width="2.2" stroke-linecap="round" opacity="0.55"/>
+    <line x1="355.9" y1="110.0" x2="345.5" y2="116.0" stroke="#8FB49A" stroke-width="2.2" stroke-linecap="round" opacity="0.55"/>
+    <line x1="376.0" y1="200.0" x2="358.0" y2="200.0" stroke="#D6A055" stroke-width="4" stroke-linecap="round" opacity="1"/>
+    <line x1="355.9" y1="290.0" x2="345.5" y2="284.0" stroke="#8FB49A" stroke-width="2.2" stroke-linecap="round" opacity="0.55"/>
+    <line x1="290.0" y1="355.9" x2="284.0" y2="345.5" stroke="#8FB49A" stroke-width="2.2" stroke-linecap="round" opacity="0.55"/>
+    <line x1="200.0" y1="376.0" x2="200.0" y2="358.0" stroke="#D6A055" stroke-width="4" stroke-linecap="round" opacity="1"/>
+    <line x1="110.0" y1="355.9" x2="116.0" y2="345.5" stroke="#8FB49A" stroke-width="2.2" stroke-linecap="round" opacity="0.55"/>
+    <line x1="44.1" y1="290.0" x2="54.5" y2="284.0" stroke="#8FB49A" stroke-width="2.2" stroke-linecap="round" opacity="0.55"/>
+    <line x1="24.0" y1="200.0" x2="42.0" y2="200.0" stroke="#D6A055" stroke-width="4" stroke-linecap="round" opacity="1"/>
+    <line x1="44.1" y1="110.0" x2="54.5" y2="116.0" stroke="#8FB49A" stroke-width="2.2" stroke-linecap="round" opacity="0.55"/>
+    <line x1="110.0" y1="44.1" x2="116.0" y2="54.5" stroke="#8FB49A" stroke-width="2.2" stroke-linecap="round" opacity="0.55"/>
+
+  <!-- horizontal (E-W) secondary points -->
+  <polygon points="200,189 96,200 200,211" fill="#8FB49A" opacity="0.42"/>
+  <polygon points="200,189 304,200 200,211" fill="#8FB49A" opacity="0.42"/>
+
+  <!-- vertical (N-S) main needle -->
+  <polygon points="200,74 215,200 185,200" fill="url(#needleN)"/>
+  <polygon points="200,326 215,200 185,200" fill="url(#needleS)"/>
+
+  <!-- hub -->
+  <circle cx="200" cy="200" r="21" fill="#061617" stroke="#D6A055" stroke-width="3"/>
+  <circle cx="200" cy="200" r="5.5" fill="#D6A055"/>
+
+  <!-- north marker -->
+  <text x="200" y="52" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#EAF1EC" opacity="0.85" font-style="italic">N</text>
+</svg>

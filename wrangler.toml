@@ -1,0 +1,8 @@
+# Cloudflare Workers config — deploys your site as static assets.
+# This file must stay at the ROOT of your repo (next to the public/ folder).
+
+name = "longevity-compass"
+compatibility_date = "2025-01-01"
+
+[assets]
+directory = "./public"
