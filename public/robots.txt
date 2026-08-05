@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://longevity-compass.com/sitemap.xml
